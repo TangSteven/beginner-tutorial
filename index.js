@@ -57,30 +57,37 @@ function updateBackgroundImage() {
     case 0:
       document.body.style.backgroundImage = "url('/assets/tsukasa.jpg')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Sanitary Sunday!"
       break;
     case 1:
       document.body.style.backgroundImage = "url('/assets/heathcliff2.jpg')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Miraculous Monday!"
       break;
     case 2:
       document.body.style.backgroundImage = "url('/assets/heathcliff.jpg')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Tarantula Tuesday!"
       break;
     case 3:
       document.body.style.backgroundImage = "url('/assets/main-bg.png')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Weathering Wednesday!"
       break;
     case 4:
       document.body.style.backgroundImage = "url('/assets/reo.png')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Tornado Thursday!"
       break;
     case 5:
       document.body.style.backgroundImage = "url('/assets/yoimiya2.jpg')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Free! Friday"
       break;
     case 6:
       document.body.style.backgroundImage = "url('/assets/persona5.png')"
       document.body.style.backgroundSize = "100% auto"
+      finalMessage.textContent = "Have a Schelemm's (s)canal Saturday"
       break;
   }
 }
