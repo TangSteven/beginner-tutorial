@@ -2,7 +2,7 @@
 :root {
     /* Colors */
     --color-page-background: #50AFC9;
-    --color-main-container-background: #FF5B70;
+    --color-main-container-background: #9966CC; /* #FF5B70; h*/
     --color-inner-container-background: #FFF7F4;
     --color-border: #9E0E2B;
     --color-button-background: #FFF;
@@ -11,7 +11,8 @@
     --color-message-text: #9E0E2B;
     
     /* Images */
-    --image-path-background: url('assets/main-bg.png');
+    --image-path-background: url('assets/tsukasa.jpg');
+    background-position: center;
     --image-path-content: url('assets/image-content/image-1.png');
     
     /* Fonts */
@@ -40,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--color-page-background) var(--image-path-background) bottom center no-repeat;
+    background: var(--color-page-background) var(--image-path-background) center no-repeat;
     background-size: 100% auto; /* Desktop view */
   }
   
@@ -153,6 +154,32 @@
   }
   
   #main-button:hover {
+    transform: scale(1.05);
+  }
+
+   /* Main Button */
+  #reset-button {
+    position: relative;
+    height: 16.5%;
+    aspect-ratio: 175 / 44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-button);
+    border: var(--border-width-inner) solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-button-background);
+    color: var(--color-button-text);
+    text-align: center;
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    transition: transform 0.2s ease;
+  }
+  
+  #reset-button:hover {
     transform: scale(1.05);
   }
   

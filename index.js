@@ -18,6 +18,7 @@ const images = [
 // Connect to the elements we need to change
 const imageContent = document.querySelector('.image-content');  // Image container
 const mainButton = document.getElementById('main-button');      // Image switch button
+const resetButton = document.getElementById('reset-button');      // Image reset button
 const finalMessage = document.querySelector('.final-message');  // Final message
 
 // =============================================
@@ -48,10 +49,47 @@ function updateImage() {
   };
 }
 
+function updateBackgroundImage() {
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  console.log(dayOfWeek)
+  switch(dayOfWeek) {
+    case 0:
+      document.body.style.backgroundImage = "url('/assets/tsukasa.jpg')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 1:
+      document.body.style.backgroundImage = "url('/assets/heathcliff2.jpg')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 2:
+      document.body.style.backgroundImage = "url('/assets/heathcliff.jpg')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 3:
+      document.body.style.backgroundImage = "url('/assets/main-bg.png')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 4:
+      document.body.style.backgroundImage = "url('/assets/reo.png')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 5:
+      document.body.style.backgroundImage = "url('/assets/yoimiya2.jpg')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+    case 6:
+      document.body.style.backgroundImage = "url('/assets/persona5.png')"
+      document.body.style.backgroundSize = "100% auto"
+      break;
+  }
+}
+
 // =============================================
 // STEP 5: Initial image display 
 // =============================================
 // Show first image when page loads
+updateBackgroundImage();
 updateImage();
 
 // =============================================
@@ -71,5 +109,19 @@ mainButton.addEventListener('click', () => {
   if (currentIndex === images.length - 1) {
     mainButton.style.display = 'none';
     finalMessage.style.display = 'block';
+    resetButton.style.display = 'block';
   }
 });
+
+resetButton.addEventListener('click', () => {
+  // Reset to first image
+  currentIndex = 0;
+  updateImage();
+  
+  // Bring back the main button and hide the final message
+
+  mainButton.style.display = 'block';
+  resetButton.style.display = 'none';
+  finalMessage.style.display = 'none';
+});
+
