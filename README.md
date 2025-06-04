@@ -22,6 +22,12 @@ This project creates a stylized pop-up window that displays a series of images. 
 - Mobile-responsive design
 - Decorative UI elements (close and shrink buttons)
 
+## Future Features
+
+- Weather
+- Holidays
+- Message changes depending on time of day
+
 ## 📁 Project Structure
 
 ```
