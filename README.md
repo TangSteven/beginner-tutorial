@@ -27,6 +27,8 @@ This project creates a stylized pop-up window that displays a series of images. 
 - Weather
 - Holidays
 - Message changes depending on time of day
+- Animated Hearts
+- Flowers(?) grow/Multiple 'For you <3' windows pop up askewed all over screen
 
 ## 📁 Project Structure
 
